@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <!-- Android chrome theme color -->
+  <meta name="theme-color" content="#ECEFF1">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+  <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+
+  <title></title>
+</head>
+<style>
+.arc text {
+  font: 10px sans-serif;
+  text-anchor: middle;
+}
+
+.arc path {
+  stroke: #fff;
+}
+
+.fixed{
+  display: inline-block;
+}
+.my-legend{
+  padding-left: 20px;
+}
+.my-legend .legend-title {
+  text-align: left;
+  margin-bottom: 5px;
+  font-weight: bold;
+  font-size: 90%;
+  }
+.my-legend .legend-scale ul {
+  margin: 0;
+  margin-bottom: 5px;
+  padding: 0;
+  float: left;
+  list-style: none;
+  }
+.my-legend .legend-scale ul li {
+  font-size: 80%;
+  list-style: none;
+  margin-left: 0;
+  line-height: 18px;
+  margin-bottom: 2px;
+  }
+.my-legend ul.legend-labels li span {
+  display: block;
+  float: left;
+  height: 16px;
+  width: 30px;
+  margin-right: 5px;
+  margin-left: 0;
+  border: 1px solid #999;
+  }
+.my-legend .legend-source {
+  font-size: 70%;
+  color: #999;
+  clear: both;
+  }
+.my-legend a {
+  color: #777;
+  }
+
+  .tooltip {
+  background: #eee;
+  opacity: 0.9;
+  box-shadow: 0 0 2px #999999;
+  color: #333;
+  display: none;
+  font-size: 15px;
+  width:auto;
+  padding: 1%;
+  position: absolute;
+  text-align: center;
+  top: 95px;
+  z-index: 10;
+}
+</style>
+
+
+<body>
+
+  <div class='my-legend'>
+    <div class='legend-title'>Obesity Percentage per State</div>
+    <div class='legend-scale'>
+      <ul class='legend-labels'>
+        <li><span style='background:#80CBC4;'></span>Good</li>
+        <li><span style='background:#FFCC80;'></span>Overweight</li>
+        <li><span style='background:#EF9A9A;'></span>Obese</li>
+      </ul>
+    </div>
+  </div>
+  <div class="fixed" id = "chart">  </div>
+  <div class="fixed" id = "pie_chart">
+
+  </div>
+
+
+
+
+</body>
+
+
+<script src = "https://d3js.org/d3.v4.min.js"></script>
+<script src ="app.js"></script>
+</html>

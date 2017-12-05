@@ -1,0 +1,15 @@
+{
+  "name": "ukfoodtrends",
+  "version": "1.0.0",
+  "description": "Information Visualization",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jared Rooprai",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.18.13",
+    "gulp": "^3.9.1"
+  }
+}
